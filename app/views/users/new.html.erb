@@ -1,0 +1,31 @@
+
+<%= form_with scope: :user, url: users_path, local: true do |form| %>
+    <p>
+      <%= form.label :first_name %><br>
+      <%= form.text_field :first_name %>
+    </p>
+   
+    <p>
+      <%= form.label :last_name %><br>
+      <%= form.text_area :last_name %>
+    </p>
+
+    <p>
+    <%= form.label :city %><br>
+    <%= form.text_area :city %>
+  </p>
+
+  <p>
+  <%= form.label :state %><br>
+  <%= form.text_area :state %>
+</p>
+
+<p>
+<%= form.label :country %><br>
+<%= form.text_area :country %>
+</p>
+   
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
